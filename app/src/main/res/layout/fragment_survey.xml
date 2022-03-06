@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_8_dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/questions_submitted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_32_dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_20_sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Questions submitted: 0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_14_dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questions_submitted"
+        tools:itemCount="8"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/layout_question"
+        tools:orientation="horizontal" />
+
+    <include
+        android:id="@+id/loading_component"
+        layout="@layout/layout_loading" />
+
+    <include
+        android:id="@+id/end_component"
+        layout="@layout/layout_end" />
+
+    <include
+        android:id="@+id/error_component"
+        layout="@layout/layout_error" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

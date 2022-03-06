@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/drawable-anydpi/ic_question.xml" value="0.162" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/drawable-mdpi/ic_loader_animation.xml" value="0.162" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/drawable-mdpi/ic_stories_circle.xml" value="0.162" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.162" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/drawable/ic_question.xml" value="0.162" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/layout/fragment_start.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/layout/fragment_survey.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/layout/layout_end.xml" value="0.1" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/layout/layout_error.xml" value="0.2" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/layout/layout_loading.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/layout/layout_question.xml" value="0.13973799126637554" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/layout/layout_snackbar.xml" value="0.264" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.162" />
+        <entry key="..\:/Users/georgiopoulos/AndroidStudioProjects/Survey/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.162" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

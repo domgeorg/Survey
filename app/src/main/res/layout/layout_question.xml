@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_14_dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_32_dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16_sp"
+        app:layout_constraintBottom_toTopOf="@+id/question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Question 1/20" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_32_dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/next"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/text_16_sp"
+        app:layout_constraintBottom_toTopOf="@+id/question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_14_dp"
+        android:layout_marginBottom="@dimen/dimen_32_dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/previous"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/text_16_sp"
+        app:layout_constraintBottom_toTopOf="@+id/question"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_14_dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_18_sp"
+        app:layout_constraintBottom_toTopOf="@+id/answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="What is your favorite food" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_24_dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:hint="@string/answer_hint"
+        android:inputType="text|textAutoComplete"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/submit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_button"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_20_sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
