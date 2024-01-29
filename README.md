@@ -1,10 +1,14 @@
 # Survey Android App
-The Survey Android App is a coding challenge project designed to showcase my expertise in Android development. The application demonstrates the ability to load a questionnaire from the network, allow users to answer questions, and submit their responses. The primary goal is to create a seamless and intuitive survey-taking experience for users.
+The Survey Android App is a coding challenge project designed to showcase my expertise in Android development. The application demonstrates the ability to load a questionnaire from the network, and allow users to answer questions, and submit their responses. The primary goal is to create a seamless and intuitive survey-taking experience for users.
 
 ## This project is thoroughly tested with both UI and unit tests.
-________________
 
 ## Video
+
+https://github.com/domgeorg/Survey/assets/11994115/4a1ea75c-4bee-4f65-b57f-9d469c5a9b74
+
+https://github.com/domgeorg/Survey/assets/11994115/ecd639c9-7fb3-4a99-b807-2f90e5dbfb66
+
 
 ## Architecture
 
