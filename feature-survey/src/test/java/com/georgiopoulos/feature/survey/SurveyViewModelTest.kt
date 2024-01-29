@@ -189,6 +189,13 @@ class SurveyViewModelTest {
             viewModel.triggerEvent(event = dummyAnswer)
 
             // Then
+            val expectedQuestions = mutableMapOf(
+                1 to QuestionModel("What is your favourite colour?", pendingAnswer = "black"),
+                2 to QuestionModel("What is your favourite food?"),
+                3 to QuestionModel("What is your favourite country?"),
+                4 to QuestionModel("What is your favourite sport?"),
+                5 to QuestionModel("What is your favourite team?")
+            )
             Assert.assertEquals(
                 SurveyUiData(
                     isLoading = false,
@@ -196,7 +203,7 @@ class SurveyViewModelTest {
                         questionId = dummyAnswer.questionId,
                         questionModel = dummyAnswer.questionModel,
                     ),
-                    questions = dummyQuestions,
+                    questions = expectedQuestions,
                 ),
                 viewModel.uiState.value,
             )

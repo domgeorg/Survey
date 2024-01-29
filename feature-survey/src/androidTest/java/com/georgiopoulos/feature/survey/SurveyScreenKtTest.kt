@@ -208,5 +208,4 @@ class SurveyScreenKtTest {
         composeTestRule.onNodeWithTag("submissionFailure").assertIsDisplayed()
         composeTestRule.onNodeWithTag("successSubmission").assertIsNotDisplayed()
     }
-
 }

@@ -34,7 +34,7 @@ fun Question(
     onSubmit: (QuestionModel) -> Unit,
 ) {
     val focusManager = LocalFocusManager.current
-    var answer by remember { mutableStateOf("") }
+    var answer by remember { mutableStateOf(questionModel.pendingAnswer) }
     val keyboardState by keyboardAsState()
     if (keyboardState == Closed) {
         focusManager.clearFocus()

@@ -81,18 +81,16 @@ class SurveyViewModel @Inject constructor(
                 previousState.copy(invalidAnswer = validationStatus.copy())
             }
 
-            Valid -> {
-                _uiState.update { previousState ->
-                    previousState.copy(invalidAnswer = null)
-                }
-                submitAnswer(questionId, questionModel)
-            }
+            Valid -> submitAnswer(questionId, questionModel)
         }
     }
 
     private fun submitAnswer(questionId: Int, questionModel: QuestionModel) {
         _uiState.update { previousState ->
-            previousState.copy(isLoading = true)
+            previousState.copy(
+                isLoading = true,
+                submissionResult = null,
+            )
         }
         viewModelScope.launch {
             when (submitAnswerUseCase.submit(questionId, questionModel.answer.trim())) {
@@ -102,6 +100,13 @@ class SurveyViewModel @Inject constructor(
                         submissionResult = SubmissionResult.Failure(
                             questionId = questionId,
                             questionModel = questionModel,
+                        ),
+                        questions = previousState.questions.replaceAndReturn(
+                            key = questionId,
+                            value = questionModel.copy(
+                                pendingAnswer = questionModel.answer,
+                                answer = "",
+                            ),
                         ),
                     )
                 }
@@ -117,6 +122,7 @@ class SurveyViewModel @Inject constructor(
                             key = questionId,
                             value = questionModel.copy(
                                 answer = questionModel.answer,
+                                pendingAnswer = "",
                             ),
                         ),
                     )
