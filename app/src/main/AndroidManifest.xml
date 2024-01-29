@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.survey">
+    package="com.georgiopoulos.survey">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".SurveyApplication"
+        android:name="com.georgiopoulos.survey.SurveyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Survey">
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.georgiopoulos.survey.MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>

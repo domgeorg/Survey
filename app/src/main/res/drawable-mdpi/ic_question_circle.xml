@@ -2,16 +2,16 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="oval">
-            <solid android:color="@color/white" />
+            <solid android:color="#FFFFFF" />
             <stroke
-                android:width="@dimen/dimen_3_dp"
-                android:color="@color/purple_500" />
+                android:width="3.dp"
+                android:color="#FF5241DF" />
         </shape>
     </item>
     <item
-        android:bottom="@dimen/dimen_20_dp"
+        android:bottom="20.dp"
         android:drawable="@drawable/ic_question"
-        android:left="@dimen/dimen_20_dp"
-        android:right="@dimen/dimen_20_dp"
-        android:top="@dimen/dimen_20_dp" />
+        android:left="20.dp"
+        android:right="20.dp"
+        android:top="20.dp" />
 </layer-list>
