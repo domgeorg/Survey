@@ -50,7 +50,7 @@ Handles network data fetching logic, ensuring clean separation for easy modifica
 
 ### 5. `core-data`
 
-Bridges `core-network` and `core-database`, abstracting data retrieval intricacies. Ensures the caller remains agnostic to data origin for a clean, modular architecture.
+Bridges `core-network` and `core-database` etc .. , abstracting data retrieval intricacies. Ensures the caller remains agnostic to data origin for a clean, modular architecture.
 
 ### 6. `core-domain`
 
